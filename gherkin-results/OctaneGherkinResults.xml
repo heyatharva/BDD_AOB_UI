@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><features version="1">
+    <feature name="Advantage bank UI testing" path="src\test\java\resources\BDD_Trial_4001.feature" started="1668580854568" tag="">
+        <file><![CDATA[#Auto generated Octane revision tag
+@BSPID4001REV0.2.0
+
+Feature: Advantage bank UI testing
+@TSCID28003
+  Scenario: Check if user is able to login to Advantage bank
+    Given user logs into Advantage bank
+    Then A default Log in window of Advantage Bank Portal Should Open
+  #Date 15/11/2022 14:50 PM]]></file>
+        <scenarios>
+            <scenario name="Check if user is able to login to Advantage bank">
+                <steps>
+                    <step duration="25696422900" name="Given user logs into Advantage bank" status="passed"/>
+                    <step duration="175488900" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
+                </steps>
+            </scenario>
+        </scenarios>
+    </feature>
+</features>
