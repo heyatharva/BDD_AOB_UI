@@ -140,6 +140,7 @@ public class LoginSteps{
          jswait();
          Thread.sleep(3000);
          driver.switchTo().window(p);
+         Thread.sleep(5000);
     }
 
 

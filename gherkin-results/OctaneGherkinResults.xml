@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><features version="1">
-    <feature name="Advantage bank UI testing" path="src\test\java\resources\AOB_BDD_004_Social_Media_Login_21011.feature" started="1668073362558" tag="@TID21011REV0.6.0">
+    <feature name="Advantage bank UI testing" path="src\test\java\resources\BDD_AOB_Automation_5002.feature" started="1668675379086" tag="">
         <file><![CDATA[#Auto generated Octane revision tag
-@TID21011REV0.6.0
+@BSPID5002REV0.2.0
 Feature: Advantage bank UI testing
+
+@TSCID29006
+	Scenario: Check if user is able to login to Advantage bank
+    Given user logs into Advantage bank
+    Then A default Log in window of Advantage Bank Portal Should Open
+
+
+@TSCID29007
+	Scenario: Check if user can register in advantage bank portal
+    Given user navigates to advantage bank url
+    And click on Register tab
+    Then user enters all fields in the registration page
+	And click on "Register" button
+    Then User must be registered  
+
+
+@TSCID29008
+	Scenario: Check if all the navigation tabs are available and working 
+	Given user logs into Advantage bank
+	Then A default Log in window of Advantage Bank Portal Should Open
+	Then user click on "Accounts" tab on dashboard
+	Then user gets prompted with my accounts page
+	Then user click on "New Transfer" tab on dashboard
+	Then user click on "Loans" tab on dashboard
+	Then user click on "Cards" tab on dashboard
+	Then user click on "Forecasts" tab on dashboard
+	Then user click on "Stocks" tab on dashboard
+
+
+@TSCID29009
 	Scenario: Check if user can log-in to AOB portal using social media
 		Given user navigates to advantage bank url for social media login
 		And User click on Google tab
@@ -10,24 +40,8 @@ Feature: Advantage bank UI testing
 		Then A default Log in window of Advantage Bank Portal Should Open
 		Then close app
 
-]]></file>
-        <scenarios>
-            <scenario name="Check if user can log-in to AOB portal using social media">
-                <steps>
-                    <step duration="22515448100" name="Given user navigates to advantage bank url for social media login" status="passed"/>
-                    <step duration="2437697500" name="And User click on Google tab" status="passed"/>
-                    <step duration="19031843200" name="And user enters their respective Gmail address and password and click on next" status="passed"/>
-                    <step duration="3282796600" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
-                    <step duration="480417500" name="Then close app" status="passed"/>
-                </steps>
-            </scenario>
-        </scenarios>
-    </feature>
-    <feature name="Advantage bank UI testing" path="src\test\java\resources\AOB_BDD_005_Merchants_View_Validations_28001.feature" started="1668073410696" tag="@TID28001REV0.4.0">
-        <file><![CDATA[#Auto generated Octane revision tag
-@TID28001REV0.4.0
-Feature: Advantage bank UI testing
-
+	
+@TSCID29010
   Scenario: Check if user is able to use the management console
     Given user logs into Advantage bank
     Then A default Log in window of Advantage Bank Portal Should Open
@@ -35,89 +49,62 @@ Feature: Advantage bank UI testing
     Then user clicks on Management Console in the list
     Then a new tab should open
     Then user clicks on merchants
-    Then a list of merchants should appear for the user]]></file>
-        <scenarios>
-            <scenario name="Check if user is able to use the management console">
-                <steps>
-                    <step duration="7482521200" name="Given user logs into Advantage bank" status="passed"/>
-                    <step duration="3324876300" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
-                    <step duration="215658800" name="Then user clicks on profile icon" status="passed"/>
-                    <step duration="3354303800" name="Then user clicks on Management Console in the list" status="passed"/>
-                    <step duration="195979800" name="Then a new tab should open" status="passed"/>
-                    <step duration="3161770600" name="Then user clicks on merchants" status="passed"/>
-                    <step duration="3320440500" name="Then a list of merchants should appear for the user" status="passed"/>
-                </steps>
-            </scenario>
-        </scenarios>
-    </feature>
-    <feature name="Advantage bank UI testing" path="src\test\java\resources\Login-workflow_19005.feature" started="1668073432809" tag="@TID19005REV0.2.0">
-        <file><![CDATA[#Auto generated Octane revision tag
-@TID19005REV0.2.0
-Feature: Advantage bank UI testing
-
-  Scenario: Check if user is able to login to Advantage bank
-    Given user logs into Advantage bank
-    Then A default Log in window of Advantage Bank Portal Should Open
+    Then a list of merchants should appear for the user 
 ]]></file>
         <scenarios>
             <scenario name="Check if user is able to login to Advantage bank">
                 <steps>
-                    <step duration="7470057200" name="Given user logs into Advantage bank" status="passed"/>
-                    <step duration="3325549000" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
+                    <step duration="9349862000" name="Given user logs into Advantage bank" status="passed"/>
+                    <step duration="3147286900" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
                 </steps>
             </scenario>
-        </scenarios>
-    </feature>
-    <feature name="Advantage bank UI testing" path="src\test\java\resources\Register-Workflow_21007.feature" started="1668073444972" tag="@TID21007REV0.3.0">
-        <file><![CDATA[#Auto generated Octane revision tag
-@TID21007REV0.3.0
-Feature: Advantage bank UI testing
-
-  Scenario: Check if user can register in advantage bank portal
-    Given user navigates to advantage bank url
-    And click on Register tab
-    Then user enters all fields in the registration page
-	And click on "Register" button
-    Then User must be registered]]></file>
-        <scenarios>
             <scenario name="Check if user can register in advantage bank portal">
                 <steps>
-                    <step duration="7588860200" name="Given user navigates to advantage bank url" status="passed"/>
-                    <step duration="118735800" name="And click on Register tab" status="passed"/>
-                    <step duration="1515015400" name="Then user enters all fields in the registration page" status="passed"/>
-                    <step duration="145810400" name="And click on &quot;Register&quot; button" status="passed"/>
-                    <step duration="231917000" name="Then User must be registered" status="passed"/>
+                    <step duration="9229757500" name="Given user navigates to advantage bank url" status="passed"/>
+                    <step duration="80185800" name="And click on Register tab" status="passed"/>
+                    <step duration="779833600" name="Then user enters all fields in the registration page" status="passed"/>
+                    <step duration="91921500" name="And click on &quot;Register&quot; button" status="passed"/>
+                    <step duration="107983400" name="Then User must be registered" status="passed"/>
                 </steps>
             </scenario>
-        </scenarios>
-    </feature>
-    <feature name="Advantage bank UI testing" path="src\test\java\resources\Tabs-workflow_21008.feature" started="1668073455104" tag="@TID21008REV0.2.0">
-        <file><![CDATA[#Auto generated Octane revision tag
-@TID21008REV0.2.0
-Feature: Advantage bank UI testing
-
-Scenario: Check if all the navigation tabs are available and working 
-Given user logs into Advantage bank using registeration credentials 
-Then A default Log in window of Advantage Bank Portal Should Open
-Then user click on "Accounts" tab on dashboard
-Then user gets prompted with my accounts page
-Then user click on "New Transfer" tab on dashboard
-Then user click on "Loans" tab on dashboard
-Then user click on "Cards" tab on dashboard
-Then user click on "Forecasts" tab on dashboard
-Then user click on "Stocks" tab on dashboard]]></file>
-        <scenarios>
             <scenario name="Check if all the navigation tabs are available and working">
                 <steps>
-                    <step duration="7376366000" name="Given user logs into Advantage bank using registeration credentials" status="passed"/>
-                    <step duration="3257526000" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
-                    <step duration="3207130700" name="Then user click on &quot;Accounts&quot; tab on dashboard" status="passed"/>
-                    <step duration="150226900" name="Then user gets prompted with my accounts page" status="passed"/>
-                    <step duration="3232457200" name="Then user click on &quot;New Transfer&quot; tab on dashboard" status="passed"/>
-                    <step duration="3258842300" name="Then user click on &quot;Loans&quot; tab on dashboard" status="passed"/>
-                    <step duration="3294950200" name="Then user click on &quot;Cards&quot; tab on dashboard" status="passed"/>
-                    <step duration="3215433600" name="Then user click on &quot;Forecasts&quot; tab on dashboard" status="passed"/>
-                    <step duration="3228925900" name="Then user click on &quot;Stocks&quot; tab on dashboard" status="passed"/>
+                    <step duration="8405722600" name="Given user logs into Advantage bank" status="passed"/>
+                    <step duration="3132501200" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
+                    <step duration="3129892300" name="Then user click on &quot;Accounts&quot; tab on dashboard" status="passed"/>
+                    <step duration="93373900" name="Then user gets prompted with my accounts page" status="passed"/>
+                    <step duration="3123510800" name="Then user click on &quot;New Transfer&quot; tab on dashboard" status="passed"/>
+                    <step duration="3114129600" name="Then user click on &quot;Loans&quot; tab on dashboard" status="passed"/>
+                    <step duration="3133284500" name="Then user click on &quot;Cards&quot; tab on dashboard" status="passed"/>
+                    <step duration="3132550700" name="Then user click on &quot;Forecasts&quot; tab on dashboard" status="passed"/>
+                    <step duration="3127774700" name="Then user click on &quot;Stocks&quot; tab on dashboard" status="passed"/>
+                </steps>
+            </scenario>
+            <scenario name="Check if user can log-in to AOB portal using social media">
+                <steps>
+                    <step duration="19864251400" name="Given user navigates to advantage bank url for social media login" status="passed"/>
+                    <step duration="79468900" name="And User click on Google tab" status="passed"/>
+                    <step duration="9023034900" name="And user enters their respective Gmail address and password and click on next" status="failed">
+                        <error_message><![CDATA[java.util.NoSuchElementException
+	at java.base/java.util.LinkedHashMap$LinkedHashIterator.nextNode(LinkedHashMap.java:758)
+	at java.base/java.util.LinkedHashMap$LinkedKeyIterator.next(LinkedHashMap.java:778)
+	at glue.LoginSteps.user_enters_their_respective_Gmail_address_and_password_and_click_on_next(LoginSteps.java:133)
+	at ✽.user enters their respective Gmail address and password and click on next(file:src/test/java/resources/BDD_AOB_Automation_5002.feature:37)
+]]></error_message>
+                    </step>
+                    <step duration="58000" name="Then A default Log in window of Advantage Bank Portal Should Open" status="skipped"/>
+                    <step duration="41100" name="Then close app" status="skipped"/>
+                </steps>
+            </scenario>
+            <scenario name="Check if user is able to use the management console">
+                <steps>
+                    <step duration="8057313900" name="Given user logs into Advantage bank" status="passed"/>
+                    <step duration="3140000900" name="Then A default Log in window of Advantage Bank Portal Should Open" status="passed"/>
+                    <step duration="83057200" name="Then user clicks on profile icon" status="passed"/>
+                    <step duration="3117920600" name="Then user clicks on Management Console in the list" status="passed"/>
+                    <step duration="1370596800" name="Then a new tab should open" status="passed"/>
+                    <step duration="3074082100" name="Then user clicks on merchants" status="passed"/>
+                    <step duration="3195458000" name="Then a list of merchants should appear for the user" status="passed"/>
                 </steps>
             </scenario>
         </scenarios>
